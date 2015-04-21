@@ -12,3 +12,4 @@ macro(add_lesson LESSON_NAME)
 endmacro()
 
 add_subdirectory(01-time-complexity)
+add_subdirectory(02-counting-elements)

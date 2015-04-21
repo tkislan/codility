@@ -1,4 +1,4 @@
-#include <cmath>
+#include <cstdlib>
 #include <limits>
 
 int solution(vector<int> &A) {
