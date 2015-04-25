@@ -13,3 +13,5 @@ endmacro()
 
 add_subdirectory(01-time-complexity)
 add_subdirectory(02-counting-elements)
+add_subdirectory(03-prefix-sums)
+
