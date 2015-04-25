@@ -1,6 +1,4 @@
 int solution(vector<int> &A) {
-  // write your code in C++11
-
   vector<bool> occurence(A.size(), false);
 
   for (int n : A) {
