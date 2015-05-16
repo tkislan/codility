@@ -1,20 +1,23 @@
 int solution(vector<int> &A) {
   vector<int> leader_stack;
 
-  for (int n : A) {
-    leader_stack.push_back(n);
+  size_t size = 0;
+  int value = 0;
 
-    if (leader_stack.size() >= 2) {
-      if (*leader_stack.rbegin() != *(leader_stack.rbegin() + 1)) {
-        leader_stack.pop_back();
-        leader_stack.pop_back();
-      }
+  for (int n : A) {
+    if (size == 0) {
+      value = n;
+      ++size;
+    } else if (value == n) {
+      ++size;
+    } else {
+      --size;
     }
   }
 
-  if (leader_stack.empty()) return -1;
+  if (size == 0) return -1;
 
-  int leader = leader_stack.back();
+  int leader = value;
   size_t leader_count = 0;
 
   for (int n : A) if (n == leader) ++leader_count;
