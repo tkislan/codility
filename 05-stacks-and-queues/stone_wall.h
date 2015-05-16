@@ -3,15 +3,13 @@
 int solution(vector<int> &H) {
   stack<int> s;
 
-  int result = 1;
+  int result = 0;
 
-  s.push(H.front());
+  for (int n : H) {
+    while (!s.empty() && s.top() > n) s.pop();
 
-  for (size_t i = 1; i < H.size(); ++i) {
-    while (!s.empty() && s.top() > H[i]) s.pop();
-
-    if (s.empty() || s.top() != H[i]) {
-      s.push(H[i]);
+    if (s.empty() || s.top() != n) {
+      s.push(n);
       ++result;
     }
   }
