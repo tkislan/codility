@@ -1,0 +1,1 @@
+add_lesson(min_perimeter_rectangle)
