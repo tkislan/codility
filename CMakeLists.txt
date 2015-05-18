@@ -19,5 +19,8 @@ add_subdirectory(03-prefix-sums)
 add_subdirectory(04-sorting)
 add_subdirectory(05-stacks-and-queues)
 add_subdirectory(06-leader)
+<<<<<<< HEAD
 add_subdirectory(07-maximum-slice-problem)
+=======
+>>>>>>> origin/master
 add_subdirectory(08-prime-and-composite-numbers)
