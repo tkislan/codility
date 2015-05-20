@@ -13,7 +13,7 @@ int main() {
 
   CHECK(solution(1000000000), 100);
 
-  CHECK(solution(2147395600), 163);
+  CHECK(solution(2147395600), 135);
 
   CHECK(solution(std::numeric_limits<int>::max()), 2);
 

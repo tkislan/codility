@@ -1,0 +1,1 @@
+add_lesson(chocolates_by_numbers)
